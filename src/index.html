@@ -4,9 +4,38 @@
     <meta charset="utf-8">
     <title>Data Lovers</title>
     <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
-  <body>
+
+  <header>
+      <img src="https://cdn.worldvectorlogo.com/logos/pokemon-23.svg">
+      
+    </header>
+    <div class="search">
+      <form>
+        <input type="text" id="searchbox" name="name" placeholder="Busca tu pokemon">
+        <button id="btnfilter">SEARCH</button>
+        
+      </form>
+    </div>
+    
+    <body>
+    <section class="home">
+      <div class="contenedor">
+        <div class="resultado" id="resultado"></div> 
+        <div class="pokedata" id="contenedor">
+      </div>
+        <div class="pokedex">
+        <p>
+          
+          <img src="img/pokedex.png">
+        </p>
+      </div>
+    </div>
+    </section>
+
     <div id="root"></div>
     <script src="main.js" type="module"></script>
   </body>
+  <footer>Creado por Lina y Vero</footer>
 </html>

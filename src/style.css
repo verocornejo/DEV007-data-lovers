@@ -1,0 +1,103 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+html {
+    border: rgba(196, 42, 42, 1)20px ridge;
+}
+
+body {
+    background: linear-gradient(to left, transparent, rgb(255, 187, 0) );
+}
+
+header {
+    display: flex;
+    justify-content: center;
+
+}
+
+header img{
+    object-fit: scale-down;
+    width: 30%;
+    height: 30%;
+    justify-content: center;
+    
+
+}
+.home {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.pokedata {
+    flex: 1;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+
+}
+.card{
+    background-color: rgba(194, 217, 173, 1);
+    font-family: 'Courier New', Courier, monospace;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    max-width: min-content;
+    max-height: min-content;
+    padding: 10px;
+    margin: 20px;
+    justify-content:space-around;
+    flex-wrap: wrap;
+    
+    
+}
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+}
+.pokedex :first-child {
+    flex: 2;
+    padding: 25px;
+    margin: 20px;
+    margin-bottom: 0px;
+}
+.pokedex div {
+    padding: 25px;
+    margin: 20px;
+}
+.resultado {
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+    margin: auto;
+}
+.contenedor {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+input[type=search] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    height: 30px;
+    width: 200px;
+    background: #CCC;
+    color: rgb(6, 6, 6);
+}
+
+button {
+    background-color: rgb(252, 251, 250);
+    height: 30px;
+    width: 70px;
+}
+
