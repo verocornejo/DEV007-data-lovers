@@ -4,18 +4,29 @@ import data from './data/pokemon/pokemon.js';
 const pokemones = data.pokemon; //para ingresar a la data
 const contenedor = document.getElementById("contenedor");
 // recorrer el objeto usando foreach, declarando las constantes que vamos a usar en la data
+
+
 pokemones.forEach((pokemon) => {
     const num = pokemon.num;
     const name = pokemon.name;
     const about = pokemon.about;
     const img = pokemon.img;
     const type = pokemon.type;
+
+ //const primerosPokemones = pokemones.slice(0, 9);
+
+ /*primerosPokemones.forEach((pokemon) => {
+    const num = pokemon.num;
+    const name = pokemon.name;
+    const about = pokemon.about;
+    const img = pokemon.img;
+    const type = pokemon.type;*/
     
     //hacer que la data aparezca en un innerhtml creando un div
     const card = document.createElement("div");
     card.className = "card";
     card.innerHTML = ` 
-    <img src="${img}" alt="${name}" width="100%">
+    <img src="${img}" alt="${name}" width="80%">
     <h1>${name}</h1>
     <p>#${num}<p> 
     <p>Type: ${type}</p>
