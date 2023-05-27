@@ -83,6 +83,7 @@ input[type=search] {
     display: grid;
     grid-template-columns: 1fr 1fr;
     height: 2000px;
+    background: linear-gradient(to left, transparent, rgb(255, 187, 0) );
 }
 .contenedorleft {
     display: flex;
