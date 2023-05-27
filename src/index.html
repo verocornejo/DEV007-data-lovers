@@ -8,32 +8,48 @@
   </head>
 
   <header>
-      <img src="https://cdn.worldvectorlogo.com/logos/pokemon-23.svg">
+      <img class="primera" src="https://cdn.worldvectorlogo.com/logos/pokemon-23.svg">
+      <img class= "segunda" src="img/pikachu.png">/
       
     </header>
     <div class="search">
       <form>
-        <input type="text" id="searchbox" name="name" placeholder="Busca tu pokemon">
-        <button id="btnfilter">SEARCH</button>
+        <input type="text" id="searchbox" name="name" placeholder="Busca tu pokémon">
+        <button class= "filter"id="btnfilter">SEARCH</button>
         
       </form>
     </div>
     
     <body>
-    <section class="home">
-      <div class="contenedor">
-        <div class="resultado" id="resultado"></div> 
-        <div class="pokedata" id="contenedor">
-      </div>
-        <div class="pokedex">
-        <p>
-          
-          <img src="img/pokedex.png">
-        </p>
-      </div>
-    </div>
-    </section>
+      <div class="containerglobal">
 
+        <div class = "contenedorleft">
+        <div class = "resultado" id="resultado"></div> 
+        <div class = "pokedata" id="contenedor"></div>
+        <div class = "contenedorbotones">
+          <button class ="boton1" id="Boton1">ABOUT</button>
+          <button class ="boton2" id="Boton2">EVOLUTION</button>
+          <button class ="boton3" id="Boton3">ATTACK</button>
+          <button class ="boton4" id="Boton4">STATS</button>
+
+          <div class=" navegación">
+            <button onclick="Back()">< Back</button>
+            <button onclick="Next()">Next ></button>
+    
+    
+          </div>
+    
+    
+        </div>
+        </div>
+
+      <div class="contenedorright">
+        <div class="pokedex">
+          </p>
+        </div>
+      </div>
+
+      
     <div id="root"></div>
     <script src="main.js" type="module"></script>
   </body>
