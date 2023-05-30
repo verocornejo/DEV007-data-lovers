@@ -6,52 +6,43 @@
     <link rel="stylesheet" href="style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
-
+<body>
   <header>
-      <img class="primera" src="https://cdn.worldvectorlogo.com/logos/pokemon-23.svg">
-      <img class= "segunda" src="img/pikachu.png">/
+      <img class="logo" src="https://cdn.worldvectorlogo.com/logos/pokemon-23.svg">
+      <img class= "pikachu" src="img/pikachu.png">
       
     </header>
     <div class="search">
       <form>
         <input type="text" id="searchbox" name="name" placeholder="Busca tu pokémon">
-        <button class= "filter"id="btnfilter">SEARCH</button>
-        
+        <button class="filter" id="btnfilter">SEARCH</button>
       </form>
     </div>
     
-    <body>
-      <div class="containerglobal">
-
-        <div class = "contenedorleft">
-        <div class = "resultado" id="resultado"></div> 
-        <div class = "pokedata" id="contenedor"></div>
-        <div class = "contenedorbotones">
-          <button class ="boton1" id="Boton1">ABOUT</button>
-          <button class ="boton2" id="Boton2">EVOLUTION</button>
-          <button class ="boton3" id="Boton3">ATTACK</button>
-          <button class ="boton4" id="Boton4">STATS</button>
-
-          <div class=" navegación">
-            <button onclick="Back()">< Back</button>
-            <button onclick="Next()">Next ></button>
-    
-    
+    <div class="containerglobal">
+      <div class="contenedorleft"> 
+        <div class="pokedata" id="contenedor"></div>
+        <div class="contenedorbotones">
+          <button class="boton1" id="Boton1">ABOUT</button>
+          <button class="boton2" id="Boton2">EVOLUTION</button>
+          <button class="boton3" id="Boton3">ATTACK</button>
+          <button class="boton4" id="Boton4">STATS</button>
+          
+          <div class="navegacion">
+            <button onclick="Back()">&lt; Back</button>
+            <button onclick="Next()">Next &gt;</button>
           </div>
-    
-    
-        </div>
-        </div>
-
-      <div class="contenedorright">
-        <div class="pokedex">
-          </p>
         </div>
       </div>
-
-      
-    <div id="root"></div>
-    <script src="main.js" type="module"></script>
+    
+      <div class="contenedorright">
+        <div class="resultado" id="resultado"></div>
+        <div class="pokedex"></div>
+      </div>
+    </div>
+    
   </body>
-  <footer>Creado por Lina y Vero</footer>
+    <script src="main.js" type="module"></script>
+    
+    <footer>Creado por Lina y Vero</footer>
 </html>

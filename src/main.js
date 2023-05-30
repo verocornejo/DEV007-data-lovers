@@ -15,7 +15,7 @@ pokemones.forEach((pokemon) => {
 
  //const primerosPokemones = pokemones.slice(0, 9);
 
- /*primerosPokemones.forEach((pokemon) => {
+/*primerosPokemones.forEach((pokemon) => {
     const num = pokemon.num;
     const name = pokemon.name;
     const about = pokemon.about;
