@@ -96,31 +96,43 @@ input[type=search] {
     
 
 
+   
+
 }
 .pokedata {
     display: flex;
     flex: 1;
     flex-wrap: wrap;
     margin: 0px;
-    position: absolute;
+    position:absolute;
     top: 300px;
     width: 50%;
+    background: linear-gradient(to left, transparent, rgb(255, 187, 0) );
+    max-height: 1000px; /* Establece la altura máxima deseada */
+    overflow-y: auto; /* Activa el desplazamiento vertical */
     
-}
+      }
+    
+
 
 
 .card{
     background-color: rgba(194, 217, 173, 1);
     font-family: 'Courier New', Courier, monospace;
     border-radius: 15px;
-    width: 220px;
-    height: 300px;
-    padding: 10px;
+    font-size: smaller;
+    width: 180px;
+    height: 250px;
+    
     margin: 10px;  
     box-sizing: border-box;  
     border-color: #000000;
     border-width: 2px;
     border-style: solid;
+    text-align: center;
+    
+
+   
 }
 
 
@@ -141,6 +153,7 @@ input[type=search] {
 
     transform: translateY(-15px);
     box-shadow:  12px 30px rgba (0,0,0,0.2);
+   
 }
 
 
@@ -150,7 +163,7 @@ input[type=search] {
     position: absolute;
     width: 732px;
     height: 215px;
-    left: 32px;
+    left: 24px;
     top: 1300px;
     background: #C42A2A;
     border: 5px solid #000000;
@@ -215,3 +228,32 @@ button{
 
 
 
+
+.contenedorright {
+    display: flex;
+    width: 50%;
+   /* background-image: url(img/pokedex.png);*/
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+}
+
+.imgpokemon{
+
+    display: flex;
+    width: 180px;
+    height: 180px;
+}
+
+    
+.infoPokemon{
+    
+    display: flex;
+    margin: 700px;
+    width: 100px;
+    height: 100px;
+   
+        
+    
+
+}
