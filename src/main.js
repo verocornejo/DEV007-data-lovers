@@ -26,7 +26,7 @@ pokemones.forEach((pokemon) => {
     const card = document.createElement("div");
     card.className = "card";
     card.innerHTML = ` 
-    <img src="${img}" alt="${name}" width="80%">
+    <img src="${img}" alt="${name}" width="60%">
     <h1>${name}</h1>
     <p>#${num}<p> 
     <p>Type: ${type}</p>
@@ -64,8 +64,8 @@ function mostrarPokemones(pokemones) { //funcion que toma el argumento del array
 let html = '';
 pokemones.forEach((pokemon) => { // recorrer el array usando metodo foreach
     html += `
-    <div>
-        <img src="${pokemon.img}" alt="${pokemon.name}">
+    <div class = infopokemon >
+        <img  class= imgpokemon src="${pokemon.img}" alt="${pokemon.name}" >
         <h2>${pokemon.name}</h2>
         <p>${pokemon.about}</p>
         
