@@ -96,7 +96,7 @@ input[type=search] {
     
 
 
-   
+
 
 }
 .pokedata {
@@ -111,7 +111,7 @@ input[type=search] {
     max-height: 1000px; /* Establece la altura máxima deseada */
     overflow-y: auto; /* Activa el desplazamiento vertical */
     
-      }
+}
     
 
 
@@ -132,7 +132,7 @@ input[type=search] {
     text-align: center;
     
 
-   
+
 }
 
 
@@ -153,7 +153,7 @@ input[type=search] {
 
     transform: translateY(-15px);
     box-shadow:  12px 30px rgba (0,0,0,0.2);
-   
+
 }
 
 
@@ -232,7 +232,7 @@ button{
 .contenedorright {
     display: flex;
     width: 50%;
-   /* background-image: url(img/pokedex.png);*/
+/* background-image: url(img/pokedex.png);*/
     background-repeat: no-repeat;
     background-size: contain;
     
@@ -252,7 +252,7 @@ button{
     margin: 700px;
     width: 100px;
     height: 100px;
-   
+
         
     
 
