@@ -55,7 +55,7 @@ const divResultado = document.getElementById('resultado');
 inputBuscar.addEventListener('input', () => {
 const busqueda = inputBuscar.value.toLowerCase().trim(); 
 const pokemonesFiltrados = pokemones.filter((pokemon) => { //crea un nuevo array con los pokemones filtrados que coincidan con la busqueda
-    return pokemon.name.toLowerCase().startsWith(busqueda) && busqueda.length >= 3;
+    return pokemon.name.toLowerCase()=== busqueda;
 });
 mostrarPokemones(pokemonesFiltrados);
 });
