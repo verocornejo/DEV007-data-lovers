@@ -15,7 +15,7 @@ pokemones.forEach((pokemon) => {
 
  //const primerosPokemones = pokemones.slice(0, 9);
 
- /*primerosPokemones.forEach((pokemon) => {
+/*primerosPokemones.forEach((pokemon) => {
     const num = pokemon.num;
     const name = pokemon.name;
     const about = pokemon.about;
@@ -26,7 +26,7 @@ pokemones.forEach((pokemon) => {
     const card = document.createElement("div");
     card.className = "card";
     card.innerHTML = ` 
-    <img src="${img}" alt="${name}" width="80%">
+    <img src="${img}" alt="${name}" width="60%">
     <h1>${name}</h1>
     <p>#${num}<p> 
     <p>Type: ${type}</p>
@@ -55,7 +55,7 @@ const divResultado = document.getElementById('resultado');
 inputBuscar.addEventListener('input', () => {
 const busqueda = inputBuscar.value.toLowerCase().trim(); 
 const pokemonesFiltrados = pokemones.filter((pokemon) => { //crea un nuevo array con los pokemones filtrados que coincidan con la busqueda
-    return pokemon.name.toLowerCase().startsWith(busqueda) && busqueda.length >= 3;
+    return pokemon.name.toLowerCase()=== busqueda;
 });
 mostrarPokemones(pokemonesFiltrados);
 });
@@ -64,8 +64,8 @@ function mostrarPokemones(pokemones) { //funcion que toma el argumento del array
 let html = '';
 pokemones.forEach((pokemon) => { // recorrer el array usando metodo foreach
     html += `
-    <div>
-        <img src="${pokemon.img}" alt="${pokemon.name}">
+    <div class = infopokemon >
+        <img  class= imgpokemon src="${pokemon.img}" alt="${pokemon.name}" >
         <h2>${pokemon.name}</h2>
         <p>${pokemon.about}</p>
         
