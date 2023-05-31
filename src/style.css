@@ -28,11 +28,13 @@ html {
 
 .search {
     display: flex;
+    flex-direction: column;
     position: absolute;
     left: 280px;
     top: 200px;
     
 }
+
 
 input[type=search] {
     appearance: none;
@@ -59,9 +61,13 @@ input[type=search] {
 }
 
 .resultado {
-    display: flex;
-    flex-direction: row;
-    padding: 100px;
+    position: absolute;
+    top: 410px;
+    left: 50%;
+    bottom: 300px;
+    transform: translateX(-45%);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: smaller;
     
 }
 
