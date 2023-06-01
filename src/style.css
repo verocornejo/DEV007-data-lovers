@@ -116,7 +116,9 @@ input[type=search] {
     position:absolute;
     top: 300px;
     width: 50%;
-    
+    height: 600px;
+    overflow: auto;
+
 }
     
 
@@ -163,10 +165,10 @@ input[type=search] {
 
     display: flex ;
     position: absolute;
-    width: 732px;
-    height: 215px;
+    width: 700px;
+    height: 190px;
     left: 24px;
-    top: 1300px;
+    top:920px;
     background: #C42A2A;
     border: 5px solid #000000;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
