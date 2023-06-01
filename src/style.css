@@ -61,14 +61,17 @@ input[type=search] {
 }
 
 .resultado {
-    position: absolute;
-    top: 410px;
-    left: 50%;
-    bottom: 300px;
-    transform: translateX(-45%);
-    font-family: 'Courier New', Courier, monospace;
-    font-size: smaller;
+    display: flex;
+    flex-direction: row;
+    padding: 300px;
+    top: 50px; 
     
+}
+.imgpokemon{
+    
+    height: 350px;
+    width: 380px;
+
 }
 
 
@@ -113,9 +116,6 @@ input[type=search] {
     position:absolute;
     top: 300px;
     width: 50%;
-    background: linear-gradient(to left, transparent, rgb(255, 187, 0) );
-    max-height: 1000px; /* Establece la altura máxima deseada */
-    overflow-y: auto; /* Activa el desplazamiento vertical */
     
 }
     
@@ -135,10 +135,6 @@ input[type=search] {
     border-color: #000000;
     border-width: 2px;
     border-style: solid;
-    text-align: center;
-    
-
-
 }
 
 

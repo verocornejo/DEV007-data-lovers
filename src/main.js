@@ -1,7 +1,10 @@
+import pokemon from './data/pokemon/pokemon.js';
 import data from './data/pokemon/pokemon.js';
 //console.log(data)
 //declarar las variables que vamos a usar 
 const pokemones = data.pokemon; //para ingresar a la data
+pokemones.sort();
+console.log(pokemones)
 const contenedor = document.getElementById("contenedor");
 // recorrer el objeto usando foreach, declarando las constantes que vamos a usar en la data
 
@@ -64,10 +67,26 @@ function mostrarPokemones(pokemones) { //funcion que toma el argumento del array
 let html = '';
 pokemones.forEach((pokemon) => { // recorrer el array usando metodo foreach
     html += `
-    <div class = infopokemon >
-        <img  class= imgpokemon src="${pokemon.img}" alt="${pokemon.name}" >
+    <div>
+        <img class= imgpokemon src="${pokemon.img}" alt="${pokemon.name}">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
         <h2>${pokemon.name}</h2>
-        <p>${pokemon.about}</p>
+        <br>
+        <br>
+        <br>
+        <p class= about >${pokemon.about}</p>
         
     </div>
     `;
@@ -75,4 +94,34 @@ pokemones.forEach((pokemon) => { // recorrer el array usando metodo foreach
 divResultado.innerHTML = html;
 }
 
-//
+
+const botonAZ = document.getElementById("Boton2")
+const botonZA = document.getElementById("Boton3")
+
+botonAZ.addEventListener('click', function(){
+    orderAZ.sort(name);
+
+
+
+})
+
+botonZA.addEventListener('click', function(){
+    
+})
+
+const orderAZ= pokemones;
+orderAZ.sort ((a,b) =>{
+    if (a.name == b.name) {
+        return 0;
+      }
+      if (a. name < b. name) {
+        return -1;
+      }
+      return 1; 
+
+
+});
+console.log (orderAZ);
+
+
+
